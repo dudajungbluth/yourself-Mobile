@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Imagem do Produto -->
+        <ImageView
+            android:id="@+id/ivPhoto"
+            android:layout_width="184dp"
+            android:layout_height="140dp"
+            android:contentDescription=""
+            android:scaleType="centerCrop" />
+
+        <!-- Nome do Produto -->
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="Nome do Produto"
+            android:gravity="center" />
+
+        <!-- Preço do Produto -->
+        <TextView
+            android:id="@+id/priceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:textColor="#008000"
+            android:text="R$ 0,00"
+            android:gravity="center" />
+
+        <!-- Descrição do Produto -->
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="171dp"
+            android:layout_marginTop="16dp"
+            android:gravity="start"
+            android:text="Descrição do Produto"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+        <!-- Botão para voltar ou comprar (opcional) -->
+        <Button
+            android:id="@+id/buyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#000000"
+            android:text="Comprar"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:text="Deletar produto"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="50dp"
+        android:id="@+id/cardFoto">
+
+        <ImageView
+            android:id="@+id/Ocphoto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            tools:srcCompat="@tools:sample/avatars"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:scaleType="centerCrop"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="244dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/montserrat_light"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/cardFoto"
+        app:layout_constraintTop_toTopOf="@+id/cardFoto" />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="245dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/montserrat_light"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/cardFoto"
+        app:layout_constraintStart_toEndOf="@+id/cardFoto"
+        app:layout_constraintTop_toBottomOf="@+id/txtNome"
+        app:layout_constraintVertical_bias="0.224" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
