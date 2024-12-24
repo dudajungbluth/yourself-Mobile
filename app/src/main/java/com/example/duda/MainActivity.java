@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
     public  String KEY_EMAIL = "email";
     ImageButton btnAccount;
 
+
+    // layout da main activy
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -11,14 +11,15 @@
         android:gravity="center_horizontal">
 
         <!-- Imagem do Produto -->
+
+        <!-- Nome do Produto -->
         <ImageView
             android:id="@+id/ivPhoto"
-            android:layout_width="184dp"
-            android:layout_height="140dp"
+            android:layout_width="199dp"
+            android:layout_height="218dp"
             android:contentDescription=""
             android:scaleType="centerCrop" />
 
-        <!-- Nome do Produto -->
         <TextView
             android:id="@+id/nameTextView"
             android:layout_width="wrap_content"

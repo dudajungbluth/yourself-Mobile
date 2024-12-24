@@ -1,6 +1,7 @@
 package com.example.duda;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -80,6 +81,7 @@ public class MeuAdaptador extends RecyclerView.Adapter<MeuAdaptador.ViewHolder> 
 
         String urlImage = "http://192.168.1.10/yourself-project/" + oculo.getPath();
         Picasso.get().load(urlImage).into(holder.Ocphoto);
+
 
 
     }

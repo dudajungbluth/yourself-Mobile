@@ -64,11 +64,13 @@ public class FragmentLogin extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+
         fragmentView = inflater.inflate(R.layout.fragment_login, container, false);
         buttonLogin = fragmentView.findViewById(R.id.buttonLogin);
         buttonRedirect = fragmentView.findViewById(R.id.buttonRedirect);
 
+
+        // redireciona pro register
         buttonRedirect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -108,9 +110,9 @@ public class FragmentLogin extends Fragment {
             @Override
             public void onResponse(Call<User> call, Response<User> response) {
                 if (response.isSuccessful()) {
-                    user = response.body(); //user é atribuído com a resposta da API
+                    user = response.body();
 
-                    // verificacao se 'user' não é nulo antes de tentar acessar seus campos
+
                     if (user != null) {
                         boolean saved = ((MainActivity) getActivity()).savePreferences(user.name, user.email);
                         if (saved) {

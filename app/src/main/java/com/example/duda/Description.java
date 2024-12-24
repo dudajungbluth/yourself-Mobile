@@ -104,7 +104,7 @@ public class Description extends Fragment {
                 tvDescription.setText(oculo.getDescription().toString());
 
 
-                String urlImage = "http://192.168.1.10/youself-project/" + oculo.getPath();
+                String urlImage = "http://192.168.1.10/yourself-project/" + oculo.getPath();
                 Picasso.get().load(urlImage).into(ivPhoto);
 
                 Log.d("teste", "Dados carregados com sucesso: " + oculo.getPath());
@@ -126,7 +126,7 @@ public class Description extends Fragment {
                 if(response.isSuccessful()){
 
                     oculos = response.body();
-                    Toast.makeText(requireContext(), "Sucesso ao deletar. Redirecionando...", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(requireContext(), "Produto deletado com sucesso!", Toast.LENGTH_SHORT).show();
                     FragmentTransaction fragmentTransaction = getParentFragmentManager().beginTransaction();
                     FragmentSunglasses initialFragment = FragmentSunglasses.newInstance();
                     fragmentTransaction.replace(R.id.fragmentContainerView, initialFragment);

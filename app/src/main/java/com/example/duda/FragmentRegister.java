@@ -63,6 +63,7 @@ public class FragmentRegister extends Fragment {
         }
     }
 
+    // inicia o layout
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

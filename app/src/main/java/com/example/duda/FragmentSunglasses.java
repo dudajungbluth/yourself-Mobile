@@ -24,6 +24,7 @@ import retrofit2.Response;
 
 public class FragmentSunglasses extends Fragment {
 
+    // Instancia os elementos
     ArrayList<Oculos> oculos = new ArrayList<Oculos>();
     private RecyclerView rvoculos;
     private MeuAdaptador meuAdaptador;
@@ -36,6 +37,7 @@ public class FragmentSunglasses extends Fragment {
         // Required empty public constructor
     }
 
+    // criar novas instâncias de um fragmento
     public static FragmentSunglasses newInstance() {
         FragmentSunglasses fragment = new FragmentSunglasses();
         Bundle args = new Bundle();
@@ -55,7 +57,7 @@ public class FragmentSunglasses extends Fragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_sunglasses, container, false);
-        View view2 = inflater.inflate(R.layout.fragment_acessories, container, false);
+        //View view2 = inflater.inflate(R.layout.fragment_acessories, container, false);
 
 
         btnOculosGrau = view.findViewById(R.id.oculosgrau);
@@ -86,7 +88,6 @@ public class FragmentSunglasses extends Fragment {
             }
         });
 
-        // Retorna a view inflada
         return view;
     }
 
